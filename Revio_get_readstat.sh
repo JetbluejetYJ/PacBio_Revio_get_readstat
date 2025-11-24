@@ -12,7 +12,7 @@ set -euo pipefail
 T="${NSLOTS:-${T:-16}}"
 
 # samtools 경로(환경에 맞게 조정). 기본값은 PATH상의 samtools
-SAMTOOLS="${SAMTOOLS:-/ruby/Users/yeongjae0420/00.Tools/SAMTOOLS/samtools-1.19.2/samtools}"
+SAMTOOLS="${SAMTOOLS:-/path/your/SAMTOOLS/samtools-1.19.2/samtools}"
 if ! command -v "$SAMTOOLS" >/dev/null 2>&1; then
   SAMTOOLS=samtools
 fi
